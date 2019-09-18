@@ -6,7 +6,7 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.preprocessing import image
 
 classes = ({0:'angry',1:'disgust',2:'fear',3:'happy',4:'sad',5:'surprise',6:'neutral'})
-cascade = cv2.CascadeClassifier("/haarcascade_frontalface_alt.xml") #you should edit.
+cascade = cv2.CascadeClassifier("./haarcascade_frontalface_alt.xml") #you should edit.
 cap = cv2.VideoCapture(0)
 
 model_path = '../face_classification/trained_models/fer2013_mini_XCEPTION.119-0.65.hdf5'
